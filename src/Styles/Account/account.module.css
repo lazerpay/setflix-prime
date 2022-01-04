@@ -1,0 +1,231 @@
+.wrapper{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 85vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 16px 0px 50px 0px;
+    margin: 0 auto 30px auto;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-family: var(--josefin);
+    align-self: flex-start;
+    padding: 0 16px;
+    color: var(--white);
+}
+
+.logo span{
+    color: var(--pink);
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.center{
+    font-family: var(--lato);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nameContainer{
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    align-self: flex-start;
+    font-family: var(--opensans);
+    font-size: 1rem;
+    padding-left: 7px;
+}
+
+.input{
+    width: 100%;
+    font-family: var(--opensans);
+    font-size: 1.12rem;
+    padding: 7px 10px;
+    margin-top: 50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 13px 13px 20px -8px rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 10px 1px var(--pink);
+    color: var(--white);
+}
+
+.btn{
+    margin-top: 40px;
+    font-family: var(--montserrat);
+    font-size: 1.12rem;
+    padding: 8px 16px;
+    width: max-content;
+    border-radius: 20px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover{
+    text-decoration: none;
+}
+
+.centerPara{
+    text-align: center;
+    font-family: var(--opensans);
+    font-size: 1.12rem;
+}
+
+.centerPara span{
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--yellow);
+}
+
+.redBtn{
+    margin-top: 40px;
+    font-family: var(--montserrat);
+    font-size: 1.1rem;
+    padding: 8px 40px;
+    border-radius: 20px;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.picksContainer{
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.genre{
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-family: var(--opensans);
+    margin: 0 5px 20px 0;
+    padding: 7px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 20px  rgba(0, 0, 0, 0.2);
+}
+
+.favLink{
+    display: block;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    padding: 7px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px  rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: var(--opensans);
+    display: flex;
+    align-items: center;
+}
+
+.favLink span{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.favLink:hover {
+    box-shadow: 0px 0px 10px 3px rgba(54, 215, 183, 0.5);
+    background: rgba(54, 215, 183, 0.2);
+    color: rgba(54, 215, 183, 1);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        padding-top: 30px;
+    }
+
+    .container{
+        width: 50vw;
+    }
+
+    .btn{
+        width: 60%;
+    }
+
+    .centerPara{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .wrapper{
+        padding-top: 70px;
+    }
+
+    .container{
+        width: 30vw;
+    }
+
+    .center{
+        font-size: 1.2rem;
+    }
+
+    .input, .btn, .genre, .redBtn{
+        font-size: 1rem;
+    }
+
+    .centerPara{
+        font-size: 1rem;
+    }
+
+    .btn{
+        width: max-content;
+        padding: 8px 16px;
+    }
+
+    .picksContainer{
+        margin-top: 50px;
+    }
+
+    .centerPara span{
+        margin-left: 7px;
+    }
+
+    .favLink{
+        font-size: 1rem;
+    }
+}

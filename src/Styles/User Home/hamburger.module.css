@@ -1,0 +1,62 @@
+.container{
+    position: relative;
+    z-index: 10;
+}
+
+.container i{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55vw;
+    right: 0;
+    padding: 40px 0;
+    background: var(--darkblue);
+    display: none;
+}
+
+.menu a{
+    color: white;
+    font-family: var(--montserrat);
+    margin: 16px 0;
+    font-size: 1.12rem;
+}
+
+.menu i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container i{
+        font-size: 1.5rem;
+    }
+
+    .menu{
+        width: 40vw;
+    }
+
+    .menu i{
+        font-size: 1.5rem;
+    }
+
+    .menu a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container{
+        display: none;
+    }
+}

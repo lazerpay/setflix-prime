@@ -1,0 +1,120 @@
+.container{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 13px;
+    color: var(--white);
+    z-index: 10;
+}
+
+.logo{
+    font-size: 1.25rem;
+    font-family: var(--josefin);
+    color: var(--white);
+}
+
+.logo span{
+    color: var(--pink);
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .linkContainer{
+    display: none;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 18%;
+}
+
+.right i{
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        padding: 25px 40px 25px 35px;
+    }
+
+    .logo{
+        font-size: 1.8rem;
+    }
+
+    .right{
+        width: 10%;
+    }
+
+    .right i{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container{
+        height: max-content;
+        padding: 16px 30px 16px 40px;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .right{
+        width: max-content;
+        /* border: 3px solid #fff; */
+    }
+
+    .right .linkContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .linkContainer a{
+        color: var(--white);
+        font-family: var(--montserrat);
+        margin-right: 1.12rem;
+        font-weight: 800;
+        text-transform: capitalize;
+    }
+
+    .linkContainer a:hover{
+        color: var(--pink);
+        text-decoration: none;
+    }
+
+    .right i{
+        display: none;
+    }
+
+    .account i{
+        display: inline-block;
+        color: var(--white);
+        margin-left: 20px;
+    }
+
+    .account i:hover{
+        color: var(--pink);
+    }
+}

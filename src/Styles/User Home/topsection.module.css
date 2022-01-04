@@ -1,0 +1,150 @@
+.container{
+    width: 100vw;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileContainer{
+    height: 80vh;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: var(--lato);
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.imageContainer{
+    width: 100%;
+    height: 85%;
+    margin-top: 12px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.desktopContainer{
+    display: none;
+}
+
+.loaderContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .mobileContainer{
+        height: 45vh;
+        width: 90vw;
+    }
+
+    .image{
+        margin-top: 20px;
+    }
+
+    .header{
+        padding: 0 3px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .mobileContainer{
+        display: none;
+    }
+
+    .desktopContainer{
+        display: block;
+        position: relative;
+        width: 100vw;
+        max-height: 600px; 
+    }
+
+    .loaderContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .backdrop{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    
+    .details{
+        position: relative;
+        margin-top: 8%;
+        margin-left: 40px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: var(--white);
+    }
+    
+    .name{
+        font-size: 50px;
+        font-family: var(--lato);
+    }
+    
+    .plot{
+        margin-top: 60px;
+        font-family: var(--opensans);
+        font-size: 1rem;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    
+    .btn{
+        display: block;
+        margin-top: 10%;
+        background: var(--pink);
+        color: var(--white);
+        font-family: var(--montserrat);
+        font-size: 1.1rem;
+        padding: 10px 20px; 
+        width: max-content;
+        border-radius: 30px;
+    }
+
+    .btn:hover{
+        text-decoration: none;
+    }
+
+    .btn:hover{
+        transform: scale(1.05, 1.05);
+    }
+    
+    .btn i{
+        display: inline-block;
+        margin-right: 7px;
+    }
+}

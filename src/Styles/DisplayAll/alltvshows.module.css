@@ -1,0 +1,33 @@
+.animeContainer{
+    margin: 100px auto;
+}
+
+.center{
+    color: var(--white);
+    text-align: center;
+    font-family: var(--lato);
+    margin-top: -100px;
+}
+
+@media screen and (min-width: 768px) {
+    .center{
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .center{
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .animeContainer{
+        width: 40vw;
+        margin: 50px auto;
+    }
+
+    .center{
+        font-size: 30px;
+    }
+}

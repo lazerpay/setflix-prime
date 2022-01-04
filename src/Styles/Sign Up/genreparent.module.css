@@ -1,0 +1,98 @@
+.container{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    height: max-content;
+    width: 100vw;
+}
+
+.wrapper{
+    width: 100%;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.center{
+    font-family: var(--lato);
+    margin-top: 50px;
+}
+
+.genreContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: var(--montserrat);
+    font-size: 1rem;
+    padding: 10px 0;
+    width: 40%;
+    border-radius: 20px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .center{
+        font-size: 2rem;
+    }
+
+    .btn{
+        width: 30%;
+        font-size: 1.5rem;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .center{
+        font-size: 2.5rem;
+    }
+
+    .genreContainer{
+        margin-top: 100px;
+    }
+
+    .btn{
+        width: 25%;
+        font-size: 1.8rem;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container{
+        height: 100vh;
+    }
+
+    .center{
+        font-size: 1.6rem;
+    }
+
+    .genreContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        width: 70%;
+    }
+
+    .btn{
+        width: 15%;
+        font-size: 1.12rem;
+        border-radius: 30px;
+    }
+}

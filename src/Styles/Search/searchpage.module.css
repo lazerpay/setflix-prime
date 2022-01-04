@@ -1,0 +1,90 @@
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 1.1rem;
+    font-family: var(--opensans);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input::placeholder{
+    color: var(--grey);
+    font-weight: 400;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 1.12rem;
+    font-family: var(--montserrat);
+    background: var(--yellow);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.otherContainer{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: var(--lato);
+}
+
+.loaderContainer {
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noResContainer{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--opensans);
+    text-align: center;
+    color: var(--white);
+}
+
+.noResContainer p{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1150px) {
+    .form{
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .btn{
+        width: 20%;
+    }
+}

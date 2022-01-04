@@ -1,0 +1,49 @@
+.container{
+    width: 92vw;
+    height: max-content;
+    margin-top: 40px;
+    position: relative;
+}
+
+.header{
+    font-family: var(--lato);
+    text-transform: capitalize;
+    padding: 0 5px;
+    font-size: 1.3rem;
+}
+
+.link{
+    color: var(--yellow);
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    font-family: var(--roboto);
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        width: 90vw;
+        margin-top: 100px;
+    }
+
+    .header{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container{
+        width: 95vw;
+        margin-top: 30px;
+    }
+
+    .header{
+        font-size: 1.5rem;
+    }
+
+    .link{
+        font-size: 17px;
+        right: 10px;
+        top: 10px;
+    }
+}

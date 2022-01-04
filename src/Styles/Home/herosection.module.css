@@ -1,0 +1,174 @@
+.container{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--darkblue) 50%, transparent);
+    padding-bottom: 4rem;
+}
+
+.image{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.subContainer{
+    margin-top: 1.5rem;
+    color: var(--white);
+}
+
+.content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    font-family: var(--lato);
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0 1.8rem;
+}
+
+.subHeader{
+    font-family: var(--opensans);
+    text-align: center;
+    margin-top: 27px;
+    padding: 0 1rem;
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+.btn{
+    display: block;
+    margin-top: 4rem;
+    background: var(--pink);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-family: var(--montserrat);
+    padding: 10px 12px;
+}
+
+.btn span{
+    font-size: 1.3rem;
+}
+
+.btn:hover{
+    transform: scale(1.05, 1.05);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+    .content{
+        padding: 0 50px;
+    }
+
+    .image{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header{
+        font-size: 2.5rem;
+    }
+
+    .subHeader{
+        font-size: 1.6rem;
+        line-height: 35px;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+    }
+
+    .btn span{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .content{
+        padding: 0 80px;
+    }
+
+    .image{
+        width: 75%;
+    }
+
+    .header{
+        font-size: 3rem;
+    }
+
+    .subHeader{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .btn{
+        font-size: 2rem;
+        padding: 16px;
+    }
+
+    .btn span{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media only screen and (min-width: 1150px){
+    .container{
+        height: max-content;
+    }
+
+    .subContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-top: 0.5rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 10rem;
+        align-items: flex-start;
+        width: 70%;
+        padding: 0 50px;
+    }
+
+    .header, .subHeader{
+        text-align: left;
+        padding: 0;
+    }
+
+    .header{
+        font-size: 2.4rem;
+    }
+
+    .subHeader{
+        font-size: 1.3rem;
+        line-height: 25px;
+    }
+
+    .image{
+        content: url('../../Assets/HeroImage2\ -\ Desktop.png');
+        width: 60%;
+        padding-right: 50px;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+        padding: 10px 16px;
+        margin-top: 4rem;
+    }
+
+    .btn span{
+        font-size: 1.2rem;
+    }
+}

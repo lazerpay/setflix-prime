@@ -1,0 +1,11 @@
+import { Link, useHistory } from 'react-router-dom';
+
+const history = useHistory();
+
+window.addEventListener('popstate', () => {
+        history.push(-1);
+    })
+
+
+
+, useHistory

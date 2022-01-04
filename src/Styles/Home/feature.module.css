@@ -1,0 +1,110 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.image{
+    width: 70%;
+    height: auto;
+}
+
+.content{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    font-family: var(--lato);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.body{
+    font-family: var(--opensans);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 540px) {
+    .header{
+        font-size: 1.7rem;
+    }
+
+    .body{
+        font-size: 1.12rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin-bottom: 5rem;
+    }
+
+    .header{
+        font-size: 2.3rem;
+    }
+
+    .body{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        margin-bottom: 7rem;
+    }
+
+    .header{
+        font-size: 2.7rem;
+    }
+
+    .body{
+        font-size: 1.7rem;
+    }
+
+    .image{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+        margin-bottom: 4rem;
+    }
+
+    .image{
+        width: 25%;
+        height: auto;
+    }
+
+    .content{
+        align-items: flex-start;
+        width: 63%;
+    }
+
+    .header, .body{
+        text-align: left;
+    }
+
+    .header{
+        font-size: 1.6rem;
+    }
+
+    .body{
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,28 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.center{
+    margin-top: 20px;
+    font-family: var(--lato);
+    padding: 0 10px 7px 10px;
+    border-bottom: 3px solid var(--pink);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .center{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .center{
+        font-size: 23px;
+    }
+}

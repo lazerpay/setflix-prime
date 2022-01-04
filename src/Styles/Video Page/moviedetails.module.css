@@ -1,0 +1,200 @@
+.container{
+    width: 93%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+    background: var(--lightgrey);
+    color: var(--white);
+    position: relative;
+}
+
+.loaderContainer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieName{
+    font-family: var(--lato);
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 80%;
+}
+
+.imdb{
+    margin-top: 20px;
+    font-family: var(--opensans);
+    font-size: 0.9rem;
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+.plot{
+    margin-top: 10px;
+    font-family: var(--opensans);
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+.castContainer{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.castHeader{
+    font-family: var(--lato);
+    font-size: 1rem;
+}
+
+.castNames{
+    margin-left: 10px;
+    font-family: var(--opensans);
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.released{
+    margin-top: 10px;
+    font-family: var(--lato);
+    font-size: 1rem;
+}
+
+.released span{
+    margin-left: 7px;
+    font-size: 0.9rem;
+    font-family: var(--opensans);
+}
+
+.genresContainer{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.genreHeader{
+    font-family: var(--lato);
+    font-size: 1rem;
+}
+.genreNames{
+    margin-left: 10px;
+    font-family: var(--opensans);
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.favBtn{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .movieName{
+        font-size: 1.6rem;
+    }
+
+    .imdb{
+        font-size: 1.1rem;
+    }
+
+    .plot{
+        font-size: 1.1rem;
+        line-height: 23px;
+    }
+
+    .castHeader{
+        font-size: 1.2rem;
+    }
+
+    .castNames{
+        font-size: 1.1rem;
+        line-height: 23px;
+    }
+
+    .released{
+        font-size: 1.2rem;
+        margin-top: 16px;
+    }
+
+    .released span{
+        font-size: 1.1rem;
+    }
+
+    .genreHeader{
+        font-size: 1.2rem;
+    }
+
+    .genreNames{
+        font-size: 1.1rem;
+        line-height: 23px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    .container{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .movieName{
+        font-size: 1.6rem;
+    }
+
+    .imdb{
+        font-size: 1.1rem;
+    }
+
+    .plot{
+        font-size: 1rem;
+        line-height: 23px;
+        margin-top: 30px;
+    }
+
+    .castContainer{
+        margin-top: 30px;
+    }
+
+    .castHeader{
+        font-size: 1.1rem;
+    }
+
+    .castNames{
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .released{
+        font-size: 1.1rem;
+        margin-top: 16px;
+    }
+
+    .released span{
+        font-size: 1rem;
+    }
+
+    .genreHeader{
+        font-size: 1.1rem;
+    }
+
+    .genreNames{
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .favBtn{
+        top: 20px;
+        right: 20px;
+        font-size: 1.6rem;
+    }
+}

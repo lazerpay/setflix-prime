@@ -1,0 +1,119 @@
+.container{
+    width: 95%;
+    height: max-content;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center{
+    font-family: var(--lato);
+    padding: 0 10px 7px 10px;
+    border-bottom: 3px solid var(--pink);
+    text-align: center;
+    color: var(--white);
+}
+
+.movieDetailsContainer{
+    width: 100%;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.posterContainer{
+    width: 70%;
+    height: 40vh;
+}
+
+.poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.detailsContainer{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.title{
+    font-family: var(--lato);
+    font-size: 1.6rem;
+}
+
+.date{
+    margin-top: 13px;
+    font-size: 1.2rem;
+    font-family: var(--opensans);
+    color: var(--darkgrey);
+}
+
+.desktopLink{
+    display: none;
+}
+
+@media screen and (min-width: 1150px) {
+    .movieDetailsContainer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 60%;
+        max-height: 40vh;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    .posterContainer{
+        width: 25%;
+        height: 100%;
+    }
+
+    .poster{
+        width: 100%;
+        height: auto;
+    }
+
+    .link{
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .detailsContainer{
+        align-items: flex-start;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .date{
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+
+    .desktopLink{
+        display: block;
+        margin-top: 50px;
+        color: #fff;
+        background: var(--pink);
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-family: var(--montserrat);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .desktopLink:hover{
+        text-decoration: none;
+    }
+}

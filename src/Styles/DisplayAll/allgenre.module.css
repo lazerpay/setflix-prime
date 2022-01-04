@@ -1,0 +1,49 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.center{
+    margin-top: 20px;
+    font-family: var(--lato);
+    padding: 0 10px 7px 10px;
+    border-bottom: 3px solid var(--pink);
+    text-align: center;
+}
+
+.movieContainer{
+    width: 90%;
+    max-height: max-content;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.loaderContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .center{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .center{
+        font-size: 23px;
+    }
+
+    .movieContainer{
+        width: 93%;
+        justify-content: space-between;
+    }
+}

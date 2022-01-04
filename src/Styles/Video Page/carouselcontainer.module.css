@@ -1,0 +1,12 @@
+.container{
+    width: 90%;
+    height: max-content;
+    margin-top: 60px;
+    color: var(--white);
+}
+
+.header{
+    font-family: var(--lato);
+    font-size: 1.3rem;
+    font-weight: 600;
+}

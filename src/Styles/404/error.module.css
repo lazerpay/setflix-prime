@@ -1,0 +1,54 @@
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animeContainer{
+    width: 80%;
+    margin-top: 100px;
+}
+
+.center{
+    color: var(--white);
+    text-align: center;
+    font-family: var(--montserrat);
+    margin-top: 50px;
+    font-size: 1.12rem;
+}
+
+.center:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .animeContainer{
+        width: 60%;
+    }
+
+    .center{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .animeContainer{
+        width: 50%;
+    }
+
+    .center{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .animeContainer{
+        width: 15%;
+        margin-top: 100px;
+    }
+
+    .center{
+        font-size: 1.12rem;
+    }
+}

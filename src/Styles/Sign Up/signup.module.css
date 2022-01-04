@@ -1,0 +1,131 @@
+.wrapper{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+}
+
+.container{
+    width: 85vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 16px 0px 50px 0px;
+    margin: auto;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-family: var(--josefin);
+    align-self: flex-start;
+    padding: 0 16px;
+    color: var(--white);
+}
+
+.logo span{
+    color: var(--pink);
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 95%;
+}
+
+.center{
+    font-family: var(--lato);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.input{
+    width: 95%;
+    font-family: var(--opensans);
+    font-size: 1rem;
+    padding: 7px 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 13px 13px 20px -8px rgba(0, 0, 0, 0.5);
+    color: var(--white);
+}
+
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 10px 1px var(--pink);
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn{
+    margin-top: 50px;
+    font-family: var(--montserrat);
+    font-size: 1rem;
+    padding: 8px 0;
+    width: 40%;
+    border-radius: 20px;
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 500;
+}
+
+.loginLink{
+    margin-top: 50px;
+    font-family: var(--opensans);
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.loginLink span a{
+    color: var(--white);
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        padding-top: 100px;
+    }
+
+    .container{
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .wrapper{
+        padding-top: 70px;
+    }
+
+    .container{
+        width: 30vw;
+    }
+}
